@@ -1,46 +1,80 @@
-<!-- declaration of html 5 -->
+<!-- This is the DOCTYPE declaration. It tells browsers this is an HTML5 document, the modern standard for web pages. -->
 <!DOCTYPE html>
+
+<!-- The <html> tag is the main container for the entire web page content. Everything else goes inside it. -->
 <html>
+  <!-- The <head> tag holds metadata (information about the page) and links to styles or scripts. It doesn’t show on the page. -->
   <head>
-    <!-- meta data, link , style, script -->
+    <!-- The <title> tag sets the title of the web page, shown in the browser tab. Here, it’s "Html Website". -->
     <title>Html Website</title>
 
+    <!-- The <style> tag contains CSS, which styles the appearance of the page. -->
     <style>
+      /* The * selector applies to all elements on the page. Here, it makes scrolling smooth when navigating. */
+      * {
+        scroll-behavior: smooth;
+      }
+      /* This styles <th> (table header) and <td> (table data) elements. */
       th,
       td {
+        /* Centers the text inside table cells. */
         text-align: center;
+        /* Adds 10 pixels of space inside table cells for better readability. */
         padding: 10px;
       }
     </style>
   </head>
+
+  <!-- The <body> tag contains all the visible content of the web page, like text, images, and tables. -->
   <body>
+    <!-- The <ul> tag creates an unordered list (bullet points). -->
+    <ul>
+      <!-- Each <li> tag is a list item. This one creates a link to "index.html" (home page). -->
+      <li><a href="index.html">Home</a></li>
+      <!-- Link to "about.html" (another page). -->
+      <li><a href="about.html">About</a></li>
+      <!-- Link to a section on this page with id="dheeraj_table". Clicking jumps to that table. -->
+      <li><a href="#dheeraj_table">Dheeraj</a></li>
+    </ul>
+
+    <!-- The <hr> tag adds a horizontal line (like a divider) across the page. -->
+    <hr />
+
+    <!-- The <h1> tag creates a large heading. "Hello world" is the text displayed. -->
     <h1>Hello world</h1>
+    <!-- The <h2> to <h6> tags create smaller headings, decreasing in size. -->
     <h2>Hello world</h2>
     <h3>Hello world</h3>
     <h4>Hello world</h4>
     <h5>Hello world</h5>
     <h6>Hello world</h6>
 
+    <!-- The <p> tag creates a paragraph of text. This is dummy text (Lorem ipsum) used as a placeholder. -->
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, quo!
     </p>
 
-    <!-- lists : ordered , unordered and descriptive -->
-
+    <!-- Another <ul> tag for an unordered list. The 'type="square"' attribute makes the bullets square-shaped. -->
     <ul type="square">
+      <!-- List items showing fruits as bullet points. -->
       <li>Apple</li>
       <li>Banana</li>
       <li>Cherry</li>
     </ul>
 
+    <!-- The <ol> tag creates an ordered (numbered) list. 'type="I"' uses Roman numerals (I, II, III). -->
     <ol type="I">
+      <!-- List items showing fruits, numbered with Roman numerals. -->
       <li>Apple</li>
       <li>Banana</li>
       <li>Cherry</li>
     </ol>
 
+    <!-- The <dl> tag creates a description list, used for terms and their definitions. -->
     <dl>
+      <!-- The <dt> tag defines a term (like a heading). -->
       <dt>Apple</dt>
+      <!-- The <dd> tag provides the description for the term above. -->
       <dd>Red in color</dd>
       <dt>Banana</dt>
       <dd>Yellow in color</dd>
@@ -48,27 +82,28 @@
       <dd>green in color</dd>
     </dl>
 
+    <!-- The <table> tag creates a table. 'border="1"' adds a visible border to the table. -->
     <table border="1">
+      <!-- The <tr> tag creates a table row. -->
       <tr>
+        <!-- The <th> tag creates a table header. 'colspan="3"' makes it span 3 columns. -->
         <th colspan="3">Student Data</th>
       </tr>
-      <!-- tr : table row -->
-      <!-- row 1 -->
+      <!-- Another row for the table headers. -->
       <tr>
-        <!-- th : table header  -->
+        <!-- Headers for the columns: Name, Age, Gender. -->
         <th>Name</th>
         <th>Age</th>
         <th>Gender</th>
       </tr>
-
-      <!-- row 2 -->
+      <!-- A row for data. -->
       <tr>
-        <!-- td : table data -->
+        <!-- The <td> tag holds table data (cell content). This row is for Dheeraj. -->
         <td>Dheeraj</td>
         <td>22</td>
         <td>Male</td>
       </tr>
-      <!-- row 3 -->
+      <!-- Another row for Rohan’s data. -->
       <tr>
         <td>Rohan</td>
         <td>27</td>
@@ -76,29 +111,55 @@
       </tr>
     </table>
 
-    <table border="1">
+    <!-- Another table with an 'id' attribute ("dheeraj_table") so it can be linked to (e.g., from the navigation). -->
+    <table id="dheeraj_table" border="1">
+      <!-- A row with a header spanning 2 columns. -->
       <tr>
         <th colspan="2">Dheeraj</th>
       </tr>
+      <!-- Row for Name. -->
       <tr>
         <th>Name</th>
         <td>Dheeraj</td>
       </tr>
+      <!-- Row for Age. -->
       <tr>
         <th>Age</th>
         <td>22</td>
       </tr>
+      <!-- Row for Gender. -->
       <tr>
         <th>Gender</th>
         <td>Male</td>
       </tr>
+      <!-- Row for Details, using 'rowspan="2"' to span 2 rows for the "Details" header. -->
       <tr>
         <th rowspan="2">Details</th>
         <td>9876543453</td>
       </tr>
+      <!-- Row continuing Details, with email. No <th> here because of rowspan. -->
       <tr>
         <td>dheeraj@email.com</td>
       </tr>
     </table>
+
+    <!-- The <a> tag creates a hyperlink. This links to Google’s website. -->
+    <a href="https://www.google.com">Google</a>
+
+    <!-- A link that, when clicked, opens the phone app to call the number. -->
+    <a href="tel:+918448936683"><button>Call me</button></a>
+
+    <!-- A link that opens the email app with a pre-filled email. -->
+    <!-- 'mailto:' sets the email address, 'subject' sets the email subject, 'body' adds text, and 'cc' adds a carbon copy recipient. -->
+    <a
+      href="mailto:dheeraj@email.com?subject=my new email&body=this is some dummy text&cc=rohan@email.com"
+      ><button>Email Now</button></a
+    >
+
+    <!-- A link that opens WhatsApp to send a message to the specified phone number. -->
+    <a
+      href="https://api.whatsapp.com/send/?phone=%2B918448936683&text&type=phone_number&app_absent=0"
+      ><button>Whatsapp</button></a
+    >
   </body>
 </html>
