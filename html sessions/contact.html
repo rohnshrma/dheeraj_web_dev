@@ -1,0 +1,184 @@
+<!-- This is the DOCTYPE declaration. It tells browsers this is an HTML5 document. It must be the first line of the file. -->
+<!DOCTYPE html>
+
+<!-- The <html> tag is the main container for the entire webpage. It holds all other elements. -->
+<!-- The 'lang' attribute specifies the language of the page, here set to English ("en"). -->
+<html lang="en">
+  <!-- The <head> tag contains metadata about the page, like the title or links to stylesheets. It doesn't show up on the page itself. -->
+  <head>
+    <!-- The <title> tag sets the text shown in the browser's tab or title bar. Here, it says "Contact Page". -->
+    <title>Contact Page</title>
+  </head>
+
+  <!-- The <body> tag contains all the content visible on the webpage, like text, images, forms, etc. -->
+  <body>
+    <!-- The <ul> tag creates an unordered list (a bullet-point list). Each item in the list is defined with an <li> tag. -->
+    <ul>
+      <!-- The <li> tag defines a single list item. -->
+      <!-- The <a> tag creates a hyperlink (clickable link). The 'href' attribute specifies the destination URL or file. -->
+      <!-- Here, it links to "index.html", which is likely the home page. The text "Home" is what users see and click. -->
+      <li><a href="index.html">Home</a></li>
+
+      <!-- Another list item with a link to "about.html". This is likely the About page. -->
+      <li><a href="about.html">About</a></li>
+
+      <!-- This link points to a specific section on "index.html" with an ID of "dheeraj_table". -->
+      <!-- The '#' symbol in 'href' indicates a specific section (anchor) on the linked page. Clicking this jumps to that section. -->
+      <li><a href="index.html#dheeraj_table">Dheeraj</a></li>
+
+      <!-- This links to "contact.html", likely the current page (Contact Us page). -->
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+
+    <!-- The <hr> tag creates a horizontal line across the page. It's used to visually separate sections. -->
+    <hr />
+
+    <!-- The <form> tag creates a form for user input, like text fields or buttons. -->
+    <!-- The 'action' attribute specifies where the form data is sent when submitted. Here, it sends an email to "webigeeksofficial@gmail.com". -->
+    <!-- The 'method' attribute defines how data is sent. "post" sends data securely in the background. -->
+    <!-- The 'enctype' attribute specifies how form data is encoded. "text/plain" sends it as plain text, often used for email forms. -->
+    <form
+      action="mailto:webigeeksofficial@gmail.com"
+      method="post"
+      enctype="text/plain"
+    >
+      <!-- The <label> tag provides a text description for a form input, making it clear what the user should enter. -->
+      <!-- The 'for' attribute links the label to an input by matching the input's 'id'. Clicking the label focuses the input. -->
+      <label for="f_name">Full Name : </label>
+      <!-- The <input> tag creates a field where users can type data. -->
+      <!-- 'name' attribute gives the input a name, used when sending form data (e.g., "full_name" will be the key in the data). -->
+      <!-- 'type="text"' makes this a single-line text input for things like names. -->
+      <!-- 'id="f_name"' is a unique identifier, linking to the label's 'for' attribute. -->
+      <!-- 'placeholder' shows faint text in the field to hint at what to enter (disappears when typing). -->
+      <!-- 'required' means the user must fill this field before submitting the form. -->
+      <input
+        name="full_name"
+        type="text"
+        id="f_name"
+        placeholder="Enter your name"
+        required
+      />
+
+      <!-- Adds a line break (<br>) to move the next element to a new line for better spacing. -->
+      <br />
+
+      <!-- Label and input for an email field. -->
+      <!-- 'type="email"' ensures the input must be a valid email format (e.g., user@domain.com). -->
+      <label for="user_email">Email Address : </label>
+      <input
+        name="email_address"
+        type="email"
+        id="user_email"
+        placeholder="Enter your email"
+        required
+      />
+
+      <br />
+
+      <!-- Label and input for a password field. -->
+      <!-- 'type="password"' hides the typed characters (shows dots or asterisks for security). -->
+      <label for="user_pass">Password : </label>
+      <input
+        name="password"
+        type="password"
+        id="user_pass"
+        placeholder="Enter your password"
+        required
+      />
+
+      <br />
+
+      <!-- Label and input for a phone number. -->
+      <!-- 'type="tel"' is for telephone numbers. It may show a number pad on mobile devices. -->
+      <!-- 'minlength="10"' and 'maxlength="10"' restrict the input to exactly 10 digits (e.g., for a phone number). -->
+      <label for="tele">Mobile : </label>
+      <input
+        type="tel"
+        id="tele"
+        name="mobile_number"
+        placeholder="Enter Mobile Number"
+        minlength="10"
+        maxlength="10"
+      />
+
+      <br />
+
+      <!-- Label for a textarea, which allows multi-line text input (like a message or comment). -->
+      <label for="mess">Your Message : </label>
+      <br />
+      <!-- The <textarea> tag creates a multi-line text box. -->
+      <!-- 'id="mess"' links to the label's 'for' attribute. -->
+      <!-- 'cols="30"' sets the width (30 characters wide). -->
+      <!-- 'rows="10"' sets the height (10 lines tall). -->
+      <!-- 'placeholder' gives a hint about what to write. -->
+      <!-- 'name="message"' is the key for this data when the form is submitted. -->
+      <textarea
+        id="mess"
+        cols="30"
+        rows="10"
+        placeholder="Enter your Message"
+        name="message"
+      ></textarea>
+
+      <br />
+
+      <!-- Label and dropdown menu for selecting a country. -->
+      <label for="ctry"> Country : </label>
+      <!-- The <select> tag creates a dropdown menu. -->
+      <!-- 'id="ctry"' links to the label. -->
+      <!-- 'name="country"' is the key for the selected value in the form data. -->
+      <select id="ctry" name="country">
+        <!-- The <option> tag defines one choice in the dropdown. -->
+        <!-- 'value' is what gets sent in the form data when selected. -->
+        <!-- 'selected' makes "India" the default choice when the page loads. -->
+        <option selected value="india">India</option>
+        <option value="russia">Russia</option>
+        <option value="ukraine">Ukraine</option>
+      </select>
+
+      <br />
+
+      <!-- Text "Gender :" is just plain text, not a label, for grouping radio buttons. -->
+      Gender :
+
+      <!-- Radio buttons let users pick one option from a group. -->
+      <!-- 'type="radio"' creates a radio button. -->
+      <!-- 'name="gender"' groups these buttons together (only one can be selected). -->
+      <!-- 'id' links to the label; 'value' is what’s sent in the form data. -->
+      <input type="radio" name="gender" id="m" value="male" />
+      <label for="m">Male</label>
+
+      <input type="radio" name="gender" id="f" value="female" />
+      <label for="f">Female</label>
+
+      <input type="radio" name="gender" id="o" value="others" />
+      <label for="f">Others</label>
+      <!-- Note: This label's 'for' should be "o" to match the ID (a small error in the code). -->
+
+      <br />
+
+      <!-- Text "Skills :" groups the checkboxes. -->
+      Skills :
+      <!-- Checkboxes let users select multiple options. -->
+      <!-- 'type="checkbox"' creates a checkbox. -->
+      <!-- 'name="skills"' groups these, but each checkbox sends its own value if checked. -->
+      <!-- 'checked' makes the HTML checkbox selected by default. -->
+      <input type="checkbox" checked name="skills" id="html" value="html" />
+      <label for="html">HTML</label>
+
+      <input type="checkbox" name="skills" id="css" value="css" />
+      <label for="css">CSS</label>
+
+      <input type="checkbox" name="skills" id="js" value="javascript" />
+      <label for="js">JAVASCRIPT</label>
+
+      <br />
+
+      <!-- The <button> tag creates a clickable button. -->
+      <!-- 'type="submit"' sends the form data to the 'action' URL (here, an email). -->
+      <button type="submit">SUBMIT</button>
+      <!-- 'type="reset"' clears all form inputs back to their default state. -->
+      <button type="reset">RESET</button>
+    </form>
+  </body>
+</html>
