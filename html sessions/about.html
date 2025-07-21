@@ -1,38 +1,81 @@
-<!-- This is the DOCTYPE declaration. It tells browsers this is an HTML5 document, the modern standard for web pages. -->
 <!DOCTYPE html>
 
-<!-- The <html> tag is the main container for the entire web page. The 'lang="en"' attribute specifies the language as English. -->
 <html lang="en">
-  <!-- The <head> tag holds metadata (information about the page) that doesn’t appear on the page itself. -->
   <head>
-    <!-- The <title> tag sets the title of the web page, shown in the browser tab. Here, it’s "About Page". -->
     <title>About Page</title>
+    <style>
+      #map {
+        height: 200px;
+      }
+    </style>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="this is an intro website" />
+    <meta name="keywords" content="html css js" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <meta http-equiv="refresh" content="2" />
   </head>
 
-  <!-- The <body> tag contains all the visible content of the web page, like text, links, and lists. -->
   <body>
-    <!-- The <ul> tag creates an unordered list (bullet points) for navigation links. -->
     <ul>
-      <!-- Each <li> tag is a list item. This one creates a link to "index.html" (the home page). -->
       <li><a href="index.html">Home</a></li>
-      <!-- This links to "about.html" (the current page, so it stays here when clicked). -->
       <li><a href="about.html">About</a></li>
-      <!-- This links to a specific section on "index.html" with the id="dheeraj_table". Clicking jumps to that table on the home page. -->
       <li><a href="index.html#dheeraj_table">Dheeraj</a></li>
       <li><a href="contact.html">Contact Us</a></li>
     </ul>
-
-    <!-- The <hr> tag adds a horizontal line (like a divider) across the page to separate sections. -->
     <hr />
 
-    <!-- The <h1> tag creates a large heading. "About Page" is the text displayed prominently. -->
-    <h1>About Page</h1>
+    <img
+      src="https://m.media-amazon.com/images/I/51wbiG0Z+7L._UF1000,1000_QL80_.jpg"
+      alt="iron man suit"
+      width="100px"
+      height="100px"
+    />
+    <img src="ironman.jpg" alt="ironman wallpaper" height="100px" />
 
-    <!-- The <p> tag creates a paragraph of text. This is dummy text (Lorem ipsum) used as a placeholder to fill space. -->
+    <audio src="./audios/r2d2.mp3" muted controls></audio>
+
+    <audio controls>
+      <source src="./audios/r2d2.mp3" type="audio/mp3" />
+    </audio>
+
+    <video
+      width="200px"
+      src="./videos/4614907-uhd_3840_2160_30fps.mp4"
+      muted
+      controls
+    ></video>
+
+    <video controls width="200px" muted>
+      <source src="./videos/4614907-uhd_3840_2160_30fps.mp4" type="video/mp4" />
+    </video>
+
+    <button>hello</button>
+
+    <h1>
+      About
+      <span style="color: red">Page</span>
+    </h1>
+
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem incidunt
       veritatis consectetur, est suscipit animi dicta rerum, nulla maiores
       labore ea molestiae explicabo earum nam, tenetur esse quasi rem eum!
     </p>
+
+    <div id="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3251.5799283384004!2d77.04165607517393!3d28.469842775754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d19676196a229%3A0x10f90ba99bffe0b7!2swebiGeeks!5e1!3m2!1sen!2sin!4v1753088271880!5m2!1sen!2sin"
+        width="100%"
+        height="100%"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+
+    <div id="hello"></div>
   </body>
 </html>
