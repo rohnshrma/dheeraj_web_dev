@@ -1,80 +1,104 @@
 <!DOCTYPE html>
+<!-- Declares the document type as HTML5 -->
 <html>
+  <!-- The root element of the HTML document -->
   <head>
+    <!-- Contains metadata and links to external resources for the webpage -->
     <title>Dheeraj.com</title>
+    <!-- Sets the title of the webpage, displayed in the browser tab -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- internal css: using the style tag -->
-    <!-- <style>
-      #skills {
-        margin: 4rem;
-        box-shadow: 0 0 10px #000;
-        border-radius: 10px;
-        background-color: tomato;
-        color: #fff;
-        padding: 2rem;
-      }
-    </style> -->
-
-    <!-- external css  -->
+    <!-- Ensures the webpage is responsive, scaling properly on different devices -->
+    <!-- external css -->
     <link rel="stylesheet" href="./style.css" />
+    <!-- Links to an external CSS file (style.css) to apply styles to the webpage -->
   </head>
   <body>
+    <!-- Contains the visible content of the webpage -->
     <!-- header -->
-    <!-- inline css is applied using the style attribute -->
-    <!-- <div id="header" style="background-color: antiquewhite; text-align: center"> -->
-
     <div id="header">
+      <!-- A div element with id="header" to group header content -->
       <img
         src="https://static.vecteezy.com/system/resources/previews/024/558/262/non_2x/businessman-isolated-illustration-ai-generative-free-png.png"
         alt="dheeraj"
         width="200px"
       />
+      <!-- Displays an image with a specified URL, alt text for accessibility, and a width of 200 pixels -->
       <h1>I'm Dheeraj</h1>
+      <!-- A level-1 heading introducing the name "Dheeraj" -->
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
         laboriosam nobis perferendis sunt, sapiente qui eum repudiandae quasi
       </p>
+      <!-- A paragraph with placeholder text (Lorem ipsum) styled by the CSS rules for p elements -->
     </div>
 
     <!-- skills section -->
     <div id="skills">
+      <!-- A div element with id="skills" to group skills content -->
       <h2>My skills</h2>
+      <!-- A level-2 heading styled by the CSS rules for h2 elements -->
       <ul>
+        <!-- An unordered list to display skills -->
         <li>HTML</li>
+        <!-- List item for the skill "HTML" -->
         <li>CSS</li>
+        <!-- List item for the skill "CSS" -->
         <li>Javascript</li>
+        <!-- List item for the skill "Javascript" -->
       </ul>
     </div>
 
     <!-- details -->
     <div id="details">
+      <!-- A div element with id="details" to group details content -->
       <h2>Details</h2>
+      <!-- A level-2 heading styled by the CSS rules for h2 elements -->
       <table border="1">
+        <!-- A table with a 1-pixel border to display structured data -->
         <tr>
+          <!-- A table row -->
           <th colspan="2">Dheeraj</th>
+          <!-- A table header spanning two columns, displaying the name "Dheeraj" -->
         </tr>
         <tr>
+          <!-- A table row -->
           <th>Name</th>
+          <!-- A table header for the "Name" label -->
           <td>Dheeraj</td>
+          <!-- A table data cell containing the name "Dheeraj" -->
         </tr>
         <tr>
+          <!-- A table row -->
           <th>Age</th>
+          <!-- A table header for the "Age" label -->
           <td>21</td>
+          <!-- A table data cell containing the age "21" -->
         </tr>
         <tr>
+          <!-- A table row -->
           <th>Gender</th>
+          <!-- A table header for the "Gender" label -->
           <td>Male</td>
+          <!-- A table data cell containing the gender "Male" -->
         </tr>
         <tr>
+          <!-- A table row -->
           <th>Profession</th>
+          <!-- A table header for the "Profession" label -->
           <td>Web Developer</td>
+          <!-- A table data cell containing the profession "Web Developer" -->
         </tr>
         <tr>
+          <!-- A table row -->
           <th rowspan="2">Details</th>
+          <!-- A table header spanning two rows, for contact details -->
           <td>8765434567</td>
+          <!-- A table data cell containing a phone number -->
         </tr>
         <tr>
+          <!-- A table row -->
           <td>dheeraj@email.com</td>
+          <!-- A table data cell containing an email address -->
         </tr>
       </table>
     </div>

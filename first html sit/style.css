@@ -1,13 +1,27 @@
-#header{
-    background-color: #E23744;
-    color: white;
-    text-align: center;
-    border-radius: 10px;
-    margin: 4rem;
-    padding: 2rem;
+h2 {
+    /* Sets the font size of h2 elements to 40 pixels */
+    font-size: 40px;
+    /* Sets the text color of h2 elements to red */
+    color: red;
+    /* Specifies the font family for h2 elements as sans-serif (a clean, modern font) */
+    font-family: sans-serif;
+    /* Sets the font weight (boldness) of h2 elements to 400 (normal weight) */
+    font-weight: 400;
+    /* Applies an italic style to the text of h2 elements */
+    font-style: italic;
+    /* Adds 12 pixels of space between each letter in h2 elements */
+    letter-spacing: 12px;
+    /* Adds a text shadow to h2 elements: 2px horizontal offset, 2px vertical offset, 2px blur, black color */
+    text-shadow: 2px 2px 2px black;
 }
 
-#header img{
-    border-radius: 50%;
-    background-color: #fff;
+p {
+    /* Sets the line height (spacing between lines) to 1.15 times the font size for p elements */
+    line-height: 1.15;
+    /* Aligns the text in p elements to be justified (spreads text evenly between margins) */
+    text-align: justify;
+    /* Commented-out options for text alignment: left (default), right, or center */
+    /* text-align: left; */
+    /* text-align: right; */
+    /* text-align: center; */
 }
