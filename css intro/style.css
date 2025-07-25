@@ -1,65 +1,63 @@
-/* Selector targeting the element with id="main" */
 #main {
-    /* Sets the text color of the element's content to white (#fff) */
-    color: #fff;
-
-    /* Adds inner spacing (padding) of 64 pixels on all sides of the element */
-    padding: 64px;
-    
-    /* Aligns the text and inline/inline-block elements inside the #main element to the center */
+    color:#fff;
     text-align: center;
-
-    /* Commented-out code: Sets a single solid background color to 'thistle' (a light purple shade) */
-    /* background-color: thistle; */
-    
-    /* Commented-out code: Alternative shorthand for setting the background color to 'thistle' */
-    /* background: thistle; */
-
-    /* Commented-out code: Creates a linear gradient background transitioning from 'thistle' to an RGB color (78, 165, 157), a teal-like shade */
-    /* background: linear-gradient(thistle , rgb(78, 165, 157)); */
-    
-    /* Commented-out code: Creates a linear gradient at a 45-degree angle from 'thistle' to the RGB color */
-    /* background: linear-gradient(45deg,thistle , rgb(78, 165, 157)); */
-    
-    /* Commented-out code: Linear gradient at 45 degrees, with 'thistle' occupying up to 50% of the space, then transitioning to the RGB color */
-    /* background: linear-gradient(45deg,thistle , rgb(78, 165, 157) 50%); */
-    
-    /* Commented-out code: Linear gradient at 45 degrees, with 'thistle' exactly 50% and the RGB color starting immediately after */
-    /* background: linear-gradient(45deg,thistle 50% , rgb(78, 165, 157) 50%); */
-
-    /* Commented-out code: Sets a background image using the file located at './images/bg.jpg' */
-    /* background-image: url(./images/bg.jpg); */
-    
-    /* Commented-out code: Shorthand for setting the background image to './images/bg.jpg' */
-    /* background: url(./images/bg.jpg); */
-    
-    /* Active code: Combines a linear gradient (45 degrees, from semi-transparent red to semi-transparent black) overlaid on a background image ('./images/bg.jpg') */
-    background: linear-gradient(45deg, rgba(222, 30, 30, 0.3), rgba(0,0,0,0.3)), url(./images/bg.jpg);
-    
-    /* Ensures the background image covers the entire element, scaling it proportionally */
+    background: linear-gradient(45deg, rgba(222, 30, 30, 0.3) , rgba(0,0,0,0.3)) ,url(./images/bg.jpg);
     background-size: cover;
-    
-    /* Commented-out code: Would repeat the background image only along the x-axis (horizontally) */
-    /* background-repeat: repeat-x; */
-    
-    /* Commented-out code: Would repeat the background image only along the y-axis (vertically) */
-    /* background-repeat: repeat-y; */
-    
-    /* Prevents the background image from repeating, displaying it only once */
     background-repeat: no-repeat;
-    
-    /* Centers the background image within the element */
     background-position: center;
+
+    /* padding : inner space */
+    /* padding-left: 20px;
+    padding-top: 10px ;
+    padding-right:  30px;
+    padding-bottom: 40px; */
+
+    /* t-r-b-l */
+    padding: 20px;
+    /* t-b , l-r */
+    /* padding: 20px 40px; */
+    /* t ,l-r , b */
+    /* padding: 20px 40px 60px; */
+    /* t ,r , b ,l*/
+    /* padding: 20px 40px 60px 100px; */
+
+    /* margin : inner space */
+    
+    /* margin-left: 20px;
+    margin-top: 10px ;
+    margin-right:  30px;
+    margin-bottom: 40px; */
+
+    /* t-r-b-l */
+    margin: 20px;
+    /* t-b , l-r */
+    /* margin: 20px 40px; */
+    /* t ,l-r , b */
+    /* margin: 20px 40px 60px; */
+    /* t ,r , b ,l*/
+    /* margin: 20px 40px 60px 100px; */
+
+
+    /* border */
+
+    /* border-color:red;
+    border-width: 20px;
+    border-style: solid; */
+
+
+    /* width ,  style , color */
+    /* border: 20px solid red;
+
+    border-top: 20px dotted grey;
+    border-left: 20px dashed green;
+    border-right: 20px double yellow;
+    border-bottom: 20px solid black; */
+
 }
 
-/* Selector targeting all <img> elements inside the element with id="main" */
-#main img {
-    /* Applies a box shadow with: -4px x-offset (left), 0 y-offset, 4px blur, 0 spread, black color */
-    box-shadow: -4px 0 4px 0 black;
-
-    /* Sets the width of the image to 200 pixels (height adjusts proportionally unless specified) */
-    width: 200px;
-    
-    /* Applies a border-radius of 50%, making the image circular if it is a square */
+#main img{
+    box-shadow: -4px 0 4px 0 black ;
+    width:200px;
     border-radius: 50%;
 }
+
