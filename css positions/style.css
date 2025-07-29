@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+}
+
+/* CSS Positioning: Controls how an element is placed on a webpage.
+Each position type affects where the element sits and how it interacts with other elements.*/
+
+/* STATIC
+- This is the default position for all elements.
+- Elements stay where they naturally belong in the document flow (the normal layout of the page).
+- You can't move them with properties like top, left, right, or bottom.
+- Think of it like a book on a shelf—it stays exactly where it’s placed. */
+/* position: static; */
+
+/* RELATIVE
+- Moves an element relative to its original position in the document flow.
+- You can use top, left, right, or bottom to shift it (e.g., top: 10px moves it down 10 pixels).
+- The space it originally occupied is still reserved, so other elements don’t move to fill its spot.
+- Imagine sliding a book slightly off the shelf—it moves, but its original spot is still “taken.” */
+/* position: relative; */
+
+
+.b1{ background-color:  teal;
+    position: relative;
+    left:200px;
+    top:200px;
+}
+.b2{
+     background-color:  wheat;
+    position: relative;
+    left:100px;
+}
+
+.b3{ 
+    background-color:  orangered;
+    position: relative;
+    bottom: 100px;
+    left:300px}
+.b4{ 
+    background-color:  tan;
+    position: relative;
+    bottom: 300px;
+    left:200px;
+}
+
+/* ABSOLUTE
+   - Takes the element out of the document flow, so other elements act like it’s not there.
+   - By default, it’s positioned relative to the viewport (the browser window), but if a parent element has position: relative, absolute, or fixed, it positions relative to that parent instead.
+   - You can move it anywhere using top, left, right, or bottom.
+   - Think of it like picking a book off the shelf and placing it anywhere in the room—other books slide in to fill the gap. */
+/* position: absolute; */
+
+/* FIXED
+   - Also takes the element out of the document flow, so other elements ignore it.
+   - It’s positioned relative to the viewport and stays in place even when you scroll.
+   - Use top, left, right, or bottom to set its position.
+   - Imagine sticking a note to your computer screen—it stays there no matter how you move the desk. */
+/* position: fixed; */
+
+.b1 {
+  background-color: teal;
+position: fixed;
+left:0;
+top:0;
+}
+.b2 {
+    position: fixed;
+    top:0;
+right:0;
+  background-color: wheat;
+}
+
+.b3 {
+  background-color: orangered;
+  position: fixed;
+  bottom:0;
+  right:0;
+  
+}
+.b4 {
+    background-color: tan;
+    position: fixed;
+    bottom:0;
+    left:0;
+}
+
+/* STICKY
+   - A hybrid of relative and fixed positioning.
+   - The element stays in the document flow (like relative) until you scroll past a certain point.
+   - Then it “sticks” in place (like fixed) relative to the viewport or a parent with position: relative/absolute/fixed.
+   - You need to specify top, left, right, or bottom to define where it sticks (e.g., top: 0 makes it stick to the top when scrolled).
+   - Think of a sticky note on a page—it stays with the page as you flip, but if you scroll far enough, it locks in place at the top of your view. */
+/* position: sticky; */
