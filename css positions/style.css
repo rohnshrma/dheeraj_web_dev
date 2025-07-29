@@ -3,13 +3,6 @@
   padding: 0;
 }
 
-#papaji {
-  background-color: grey;
-  height: 500px;
-  width: 500px;
-  position: relative;
-}
-
 .box {
   height: 100px;
   width: 100px;
@@ -64,7 +57,7 @@ Each position type affects where the element sits and how it interacts with othe
    - Think of it like picking a book off the shelf and placing it anywhere in the room—other books slide in to fill the gap. */
 /* position: absolute; */
 
-.b1 {
+/* .b1 {
     position: absolute;
     right: 0;
     top: 0;
@@ -88,7 +81,7 @@ Each position type affects where the element sits and how it interacts with othe
     left: 0;
     top: 0;
   background-color: tan;
-}
+} */
 
 /* FIXED
    - Also takes the element out of the document flow, so other elements ignore it.
@@ -131,3 +124,21 @@ top:0;
    - You need to specify top, left, right, or bottom to define where it sticks (e.g., top: 0 makes it stick to the top when scrolled).
    - Think of a sticky note on a page—it stays with the page as you flip, but if you scroll far enough, it locks in place at the top of your view. */
 /* position: sticky; */
+
+
+.b1 {
+  background-color: teal;
+}
+.b2 {
+  background-color: wheat;
+}
+
+.b3 {
+
+    position: sticky;
+    top: 10px;
+    background-color: orangered;
+}
+.b4 {
+  background-color: tan;
+}
