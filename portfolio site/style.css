@@ -1,92 +1,191 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sacramento&display=swap");
 
 /* Reset default margin and padding for all elements to ensure consistent styling across browsers */
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /* Apply font and margin-bottom to all heading elements (h1 to h6) */
-h1, h2, h3, h4, h5, h6 {
-    font-family: Montserrat, Helvetica, sans-serif; /* Set font to Arial, with Helvetica and sans-serif as fallbacks */
-    margin-bottom: 1rem; /* Add 1rem (16px by default) margin below headings for spacing */
+h1 {
+  font-family: Sacramento, Arial;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Montserrat, Helvetica, sans-serif; /* Set font to Arial, with Helvetica and sans-serif as fallbacks */
+  margin-bottom: 1rem; /* Add 1rem (16px by default) margin below headings for spacing */
 }
 
 /* Style for paragraph elements */
 p {
-    font-family: sans-serif; /* Set font to browser's default sans-serif font */
-    margin-bottom: 1rem; /* Add 1rem margin below paragraphs for spacing */
+  font-family: sans-serif; /* Set font to browser's default sans-serif font */
+  margin-bottom: 1rem; /* Add 1rem margin below paragraphs for spacing */
 }
 
 /* Reusable class for a wrapper to center content and add padding */
 .wrapper {
-    /* 1rem equals 16px by default, so 4rem is 64px top/bottom, 8rem is 128px left/right */
-    padding: 4rem 8rem; /* Add padding around the content inside elements with this class */
-    text-align: center; /* Center-align text within elements with this class */
+  /* 1rem equals 16px by default, so 4rem is 64px top/bottom, 8rem is 128px left/right */
+  padding: 4rem 8rem; /* Add padding around the content inside elements with this class */
+  text-align: center; /* Center-align text within elements with this class */
 }
 
 /* Style for a reusable button class */
 .btn {
-    text-align: center; /* Center-align text inside the button */
-    padding: 12px 14px; /* Add 12px padding top/bottom and 14px padding left/right */
-    display: block; /* Make the button a block-level element to take full width of its container */
-    width: 100px; /* Set button width to 100px */
-    text-decoration: none; /* Remove underline from links styled as buttons */
-    border-radius: 30px; /* Round button corners with a 30px radius for a pill-like shape */
-    font-family: sans-serif; /* Set font to browser's default sans-serif font */
-    margin: 0 auto; /* Center the button horizontally by setting equal left/right margins */
-    border: 2px solid #000; /* Add a 2px solid black border around the button */
-    background: transparent; /* Set button background to transparent */
-    color: black; /* Set text color to black */
-    transition: 0.3s; /* Smoothly transition all properties (width, background, etc.) over 0.3 seconds */
+  text-align: center; /* Center-align text inside the button */
+  padding: 12px 14px; /* Add 12px padding top/bottom and 14px padding left/right */
+  display: block; /* Make the button a block-level element to take full width of its container */
+  width: 100px; /* Set button width to 100px */
+  text-decoration: none; /* Remove underline from links styled as buttons */
+  border-radius: 30px; /* Round button corners with a 30px radius for a pill-like shape */
+  font-family: sans-serif; /* Set font to browser's default sans-serif font */
+  margin: 0 auto; /* Center the button horizontally by setting equal left/right margins */
+  border: 2px solid #000; /* Add a 2px solid black border around the button */
+  background: transparent; /* Set button background to transparent */
+  color: black; /* Set text color to black */
+  transition: 0.3s; /* Smoothly transition all properties (width, background, etc.) over 0.3 seconds */
 }
 
 /* Hover state for the button */
 .btn:hover {
-    width: 150px; /* Increase button width to 150px on hover */
-    letter-spacing: 2px; /* Add 2px spacing between letters for a wider text appearance */
-    background: #000; /* Change background to black on hover */
-    color: #fff; /* Change text color to white on hover */
+  width: 150px; /* Increase button width to 150px on hover */
+  letter-spacing: 2px; /* Add 2px spacing between letters for a wider text appearance */
+  background: #000; /* Change background to black on hover */
+  color: #fff; /* Change text color to white on hover */
+}
+
+/* header */
+
+#header {
+  color: rgb(199, 100, 46);
+  background-color: rgb(227, 234, 237);
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+#header .cloud {
+  width: 200px;
+  /* x , y, b, c */
+  filter: drop-shadow(-4px 0 4px #000);
+}
+
+#header h1 {
+  position: relative;
+  text-shadow: -2px 0 2px #000;
+  font-style: italic;
+  font-size: 5rem;
+}
+#header h3 {
+  position: relative;
+  margin-bottom: 5rem;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  font-weight: 400;
+  text-shadow: -2px 0 2px #000;
+}
+
+#header .c1 {
+  width: 200px;
+  position: relative;
+  left: 300px;
+  top: 280px;
+}
+#header .c2 {
+  width: 300px;
+  position: relative;
+  left: 450px;
+  top: 300px;
+}
+#header .c3 {
+  opacity: 0.7;
+  width: 600px;
+  position: absolute;
+  top: 50px;
+  left: 150px;
+}
+#header .c5 {
+  width: 250px;
+  bottom: 200px;
+  left: 200px;
+  position: absolute;
+}
+#header .sun {
+  animation-name: glow;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  width: 200px;
+  top: 100px;
+  right: 100px;
+  position: absolute;
+}
+
+#header .mountain {
+  width: 800px;
+  filter: drop-shadow(-4px 0 4px #000);
+  position: relative;
 }
 
 /* Styling for the 'about' section's image */
 #about img {
-    width: 150px; /* Set image width to 150px */
-    border-radius: 50%; /* Make the image circular by setting border-radius to 50% */
-    margin-bottom: 1rem; /* Add 1rem margin below the image for spacing */
+  width: 150px; /* Set image width to 150px */
+  border-radius: 50%; /* Make the image circular by setting border-radius to 50% */
+  margin-bottom: 1rem; /* Add 1rem margin below the image for spacing */
 }
 
 /* Styling for the 'contact' section */
 #contact {
-    background: linear-gradient(45deg, #fff, #ccc); /* Apply a linear gradient background from white (#fff) to light gray (#ccc) at a 45-degree angle */
+  background: linear-gradient(
+    45deg,
+    #fff,
+    #ccc
+  ); /* Apply a linear gradient background from white (#fff) to light gray (#ccc) at a 45-degree angle */
 }
 
 /* Styling for h2 elements within the 'contact' section */
 #contact h2 {
-    font-size: 3rem; /* Set font size to 3rem (48px by default) for larger headings */
+  font-size: 3rem; /* Set font size to 3rem (48px by default) for larger headings */
 }
 
 /* Styling for paragraphs within the footer */
 footer p {
-    margin: 0; /* Remove default margin from footer paragraphs */
-    margin-top: 1rem; /* Add 1rem margin above footer paragraphs for spacing */
+  margin: 0; /* Remove default margin from footer paragraphs */
+  margin-top: 1rem; /* Add 1rem margin above footer paragraphs for spacing */
 }
 
 /* Styling for links within the footer */
 footer a {
-    margin: 0 0.5rem; /* Add 0.5rem (8px) margin on left and right of footer links for spacing */
-    text-decoration: none; /* Remove underline from footer links */
-    color: #000; /* Set link color to black */
-    font-size: 1.5rem; /* Set font size to 1.5rem (24px by default) for larger icons or text */
+  margin: 0 0.5rem; /* Add 0.5rem (8px) margin on left and right of footer links for spacing */
+  text-decoration: none; /* Remove underline from footer links */
+  color: #000; /* Set link color to black */
+  font-size: 1.5rem; /* Set font size to 1.5rem (24px by default) for larger icons or text */
 }
 
 /* Hover state for footer links */
 footer a:hover {
-    color: rgb(211, 68, 68); /* Change link color to a shade of red on hover */
+  color: rgb(211, 68, 68); /* Change link color to a shade of red on hover */
 }
 
 /* Hover state for icons within footer links */
 footer a:hover i {
-    transition: 0.3s; /* Smoothly transition icon properties over 0.3 seconds */
-    transform: scale(1.1) !important; /* Scale icon to 1.1 times its size on hover, with !important to override other styles */
+  transition: 0.3s; /* Smoothly transition icon properties over 0.3 seconds */
+  transform: scale(
+    1.1
+  ) !important; /* Scale icon to 1.1 times its size on hover, with !important to override other styles */
+}
+
+@keyframes glow {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(360deg) scale(0.7);
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
 }
