@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.parent {
+  padding: 1rem;
+  background-color: grey;
+  display: flex;
+}
+
+.box {
+  margin: 2rem;
+  background: #fff;
+  border: 2px inset #000;
+}
+
+.b1 {
+  width: 30%;
+}
+.b2 {
+  width: 40%;
+}
+.b3 {
+  width: 30%;
+}

@@ -1,0 +1,59 @@
+/* Universal selector: Targets all HTML elements on the page */
+* {
+  /* Sets the margin (outer spacing) of all elements to 0, removing default browser margins */
+  margin: 0;
+  /* Sets the padding (inner spacing) of all elements to 0, removing default browser padding */
+  padding: 0;
+}
+
+/* Class selector: Targets elements with the class 'parent' */
+.parent {
+  /* Sets the height of the parent container to 200 pixels */
+  height: 200px;
+  /* Centers the text horizontally within the element (applies to inline or inline-block child elements) */
+  text-align: center;
+  /* Adds 1rem (relative unit, typically 16px) of padding on all sides of the parent container */
+  padding: 1rem;
+  /* Sets the background color of the parent container to grey */
+  background-color: grey;
+  /* Enables Flexbox layout, making the element a flex container for its child elements */
+  display: flex;
+  /* Distributes child elements evenly across the main axis, with equal space between and around them */
+  justify-content: space-evenly;
+  /* Centers child elements vertically along the cross axis (in this case, the vertical axis) */
+  align-items: center;
+  /* Specifies that the main axis of the flex container is horizontal (left to right) */
+  flex-direction: row;
+  /* Allows child elements to wrap to the next line if they exceed the container's width */
+  flex-wrap: wrap;
+}
+
+/* Class selector: Targets elements with the class 'box' */
+.box {
+  /* Sets the background color of elements with the 'box' class to white (#fff is shorthand for white) */
+  background: #fff;
+}
+
+/* Class selector: Targets elements with the class 'b1' */
+.b1 {
+  /* Sets the height of the element to 100 pixels */
+  height: 100px;
+  /* Sets the width of the element to 300 pixels */
+  width: 300px;
+}
+
+/* Class selector: Targets elements with the class 'b2' */
+.b2 {
+  /* Sets the height of the element to 150 pixels */
+  height: 150px;
+  /* Sets the width of the element to 1000 pixels */
+  width: 1000px;
+}
+
+/* Class selector: Targets elements with the class 'b3' */
+.b3 {
+  /* Sets the height of the element to 180 pixels */
+  height: 180px;
+  /* Sets the width of the element to 1500 pixels */
+  width: 1500px;
+}
