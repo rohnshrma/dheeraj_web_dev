@@ -261,3 +261,61 @@ p {
   background-color: #fff;
   margin: 2rem;
 }
+
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 2rem;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  #nav {
+    position: static;
+    justify-content: center;
+  }
+
+  #nav .nav-links,
+  #nav .social-links {
+    display: none;
+  }
+
+  #header h2 {
+    font-size: 1.6rem;
+  }
+  #header h1 {
+    font-size: 3rem;
+  }
+  #header {
+    margin: 0;
+  }
+  #features .row .col {
+    padding: 0;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+  #features .row .col .card {
+    padding: 1rem;
+  }
+  #features .row .col:last-child {
+    margin: 0;
+  }
+  #blogs .row .col {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+  #blogs .row .col:last-child {
+    margin: 0;
+  }
+  #numbers .row .col {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+  #numbers .row .col:last-child {
+    margin: 0;
+  }
+}
