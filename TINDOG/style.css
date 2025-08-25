@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 1rem;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+.level-2 {
+  font-size: 3rem;
+  font-weight: 500;
+  color: steelblue;
+  transition: 0.3s ease-in;
+}
+
+.underline {
+  border: none;
+  border-top: 4px solid steelblue;
+  width: 40%;
+  opacity: 0;
+  margin: 1rem auto;
+}
+
+div:hover .underline {
+  opacity: 1;
+
+  transition: 0.3s ease-in-out;
+}
+
+.wrapper {
+  text-align: center;
+  padding: 4rem 8rem;
+}
+
+#features .row .col {
+  border-radius: 10px !important;
+  margin: 1rem;
+}
+#features .row .col i {
+  font-size: 4rem;
+  color: steelblue;
+  margin-bottom: 1rem;
+}
+#features .row .col p {
+  margin: 0;
+}
+
+#pricing .row {
+  margin-top: 2rem;
+}
+#pricing .card-header {
+  font-size: 2rem;
+  font-weight: 400;
+}
+#pricing .card-title {
+  font-size: 3rem;
+  font-weight: 500;
+}
