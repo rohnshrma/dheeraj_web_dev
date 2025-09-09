@@ -383,3 +383,31 @@ switch (true) {
     console.log("~ INVALID MARKS ~");
     break;
 }
+
+const gpa = prompt("Enter your GPA (0.0 - 4.0) : ");
+if (isNaN(gpa) || gpa < 0 || gpa > 4) {
+  console.log("Invalid Input");
+} else {
+  var grade;
+
+  switch (true) {
+    case gpa >= 3.7:
+      grade = "A";
+      break;
+    case gpa >= 3.3:
+      grade = "B+";
+      break;
+    case gpa >= 2.7:
+      grade = "B";
+      break;
+    case gpa >= 2.0:
+      grade = "C";
+      break;
+    case gpa >= 0.0:
+      grade = "E";
+      break;
+    default:
+      grade = "Invalid Grade";
+      break;
+  }
+}
