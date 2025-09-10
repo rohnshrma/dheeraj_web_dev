@@ -78,24 +78,141 @@ while (k >= 1) {
 // ---------------------------
 // - Use FOR loop when you know exactly how many times to repeat.
 // - Use WHILE loop when repetition depends on a condition and may not be fixed.
-
 // Task 1: Print Numbers from 1 to 10
-// Write a for loop that initializes a variable i to 1, loops while i is less than or equal to 10, and increments i by 1 each time. Log each number on a new line.
+// A for loop is used to repeat a block of code a specific number of times.
+// It has three parts: initialization, condition, and increment/decrement.
+for (var i = 1; i <= 10; i += 1) {
+  // 'var i = 1' declares a variable 'i' and sets it to 1 (starting point).
+  // 'i <= 10' is the condition; the loop runs as long as i is less than or equal to 10.
+  // 'i += 1' increases i by 1 after each loop iteration (same as i = i + 1).
+  console.log(i);
+  // console.log(i) prints the value of i to the console on a new line each time.
+  // This will print: 1, 2, 3, ..., 10.
+}
+
 // Task 2: Print Numbers from 10 Down to 1
-// Write a for loop that initializes a variable i to 10, loops while i is greater than or equal to 1, and decrements i by 1 each time. Log each number on a new line.
+// This for loop counts downward from 10 to 1.
+for (var i = 10; i >= 1; i -= 1) {
+  // 'var i = 10' sets the starting value of i to 10.
+  // 'i >= 1' means the loop continues as long as i is greater than or equal to 1.
+  // 'i -= 1' decreases i by 1 after each iteration (same as i = i - 1).
+  console.log(i);
+  // Prints the value of i: 10, 9, 8, ..., 1, each on a new line.
+}
+
 // Task 3: Print Even Numbers from 2 to 20
-// Write a for loop that initializes a variable to 2, loops while it’s less than or equal to 20, and increments by 2 each time. Log each even number on a new line.
+// This loop prints even numbers by incrementing by 2 each time.
+for (var i = 2; i <= 20; i += 2) {
+  // 'var i = 2' starts i at 2 (first even number in the range).
+  // 'i <= 20' keeps the loop running until i reaches 20.
+  // 'i += 2' increases i by 2, so we get only even numbers (2, 4, 6, ...).
+  console.log(i);
+  // Prints: 2, 4, 6, 8, ..., 20.
+}
+
 // Task 4: Print Odd Numbers from 1 to 19
-// Write a for loop that initializes a variable to 1, loops while it’s less than or equal to 19, and increments by 2 each time. Log each odd number on a new line.
+// This loop prints odd numbers by incrementing by 2, starting from 1.
+for (var i = 1; i <= 19; i += 2) {
+  // 'var i = 1' starts at 1 (first odd number).
+  // 'i <= 19' ensures the loop stops at 19 (last odd number in range).
+  // 'i += 2' skips even numbers by adding 2, giving us 1, 3, 5, ....
+  console.log(i);
+  // Prints: 1, 3, 5, 7, ..., 19.
+}
+
 // Task 5: Print Squares from 1 to 10
-// Write a for loop that initializes i to 1 and loops up to 10 (increment by 1). Log the square of i (i * i) for each iteration.
+// This loop calculates and prints the square of each number from 1 to 10.
+for (var i = 1; i <= 10; i += 1) {
+  // 'var i = 1' starts the loop at 1.
+  // 'i <= 10' runs the loop until i reaches 10.
+  // 'i += 1' increments i by 1 each time.
+  console.log(i, i ** 2);
+  // 'i ** 2' calculates the square of i (i * i).
+  // console.log(i, i ** 2) prints both i and its square, e.g., "1 1", "2 4", ..., "10 100".
+}
+
 // Task 6: Print Countdown from 50 to 0 in Steps of 10
-// Write a for loop that initializes a variable to 50, loops while it’s greater than or equal to 0, and decrements by 10 each time. Log each value on a new line.
+// This loop counts down in steps of 10, starting from 50.
+for (var i = 50; i >= 0; i -= 10) {
+  // 'var i = 50' starts at 50.
+  // 'i >= 0' continues the loop until i reaches 0.
+  // 'i -= 10' decreases i by 10 each time (50, 40, 30, ...).
+  console.log(i);
+  // Prints: 50, 40, 30, 20, 10, 0.
+}
+
 // Task 7: Print Multiplication Table for 5 (5x1 to 5x10)
-// Write a for loop that initializes i to 1 and loops up to 10 (increment by 1). Log the result of 5 multiplied by i in the format “5 x i = result” for each iteration.
+// This loop creates a multiplication table for a user-entered number.
+var num = parseInt(prompt("Enter a number : ")); // Prompts user for input and converts it to an integer.
+// 'var num' stores the number entered by the user (e.g., 2).
+// 'parseInt' converts the input string to an integer for calculations.
+// 'prompt' shows a dialog box for user input.
+for (var i = 1; i <= 10; i += 1) {
+  // 'var i = 1' starts the loop at 1.
+  // 'i <= 10' runs until i reaches 10.
+  // 'i += 1' increments i by 1 each time.
+  console.log(`${num} x ${i} = ${num * i}`);
+  // Uses template literals (backticks) to format the output.
+  // '${num} x ${i} = ${num * i}' creates a string like "2 x 1 = 2".
+  // Prints: "2 x 1 = 2", "2 x 2 = 4", ..., "2 x 10 = 20" (if num is 2).
+}
+
 // Task 8: Print Numbers from 100 Down to 50
-// Write a for loop that initializes a variable to 100, loops while it’s greater than or equal to 50, and decrements by 1 each time. Log each number on a new line.
+// This loop counts down from 100 to 50.
+for (var i = 100; i >= 50; i -= 1) {
+  // 'var i = 100' starts at 100.
+  // 'i >= 50' continues until i reaches 50.
+  // 'i -= 1' decreases i by 1 each time.
+  console.log(i);
+  // Prints: 100, 99, 98, ..., 50.
+}
+
 // Task 9: Print Sum of Numbers from 1 to 5
-// Write a for loop that initializes i to 1 and loops up to 5 (increment by 1). Use a variable to accumulate the sum (initialize sum to 0 outside the loop) and log the running sum after each addition inside the loop.
+// This loop calculates the sum of numbers from 1 to 5.
+var sum = 0; // Declares a variable 'sum' and sets it to 0 to store the running total.
+for (var i = 1; i <= 5; i += 1) {
+  // 'var i = 1' starts at 1.
+  // 'i <= 5' runs until i reaches 5.
+  // 'i += 1' increments i by 1.
+  sum += i; // Adds the current value of i to sum (sum = sum + i).
+  // After each iteration: sum = 0+1, 1+2, 3+3, 6+4, 10+5.
+}
+console.log(sum);
+// Prints the final sum (15) after the loop finishes.
+
 // Task 10: Print Every Third Number from 3 to 30
-// Write a for loop that initializes a variable to 3, loops while it’s less than or equal to 30, and increments by 3 each time. Log each number on a new line.
+// This loop prints numbers in steps of 3, starting from 3.
+for (var i = 3; i <= 30; i += 3) {
+  // 'var i = 3' starts at 3.
+  // 'i <= 30' runs until i reaches 30.
+  // 'i += 3' increments i by 3 each time (3, 6, 9, ...).
+  console.log(i);
+  // Prints: 3, 6, 9, 12, ..., 30.
+}
+
+//======= ========================================    tasks
+
+// Print numbers from 1 to 50 that are divisible by 3
+// Print numbers from 1 to 100 that are greater than 50
+// Print numbers from 1 to 20 that are less than 10
+// Print numbers from 1 to 100 that end with 5
+// Print numbers from 1 to 30 that are divisible by 5
+// Print numbers from 1 to 100 that are multiples of 7
+// Print numbers from 1 to 50 that are not divisible by 2
+// Print numbers from 1 to 100 that are greater than 25 but less than 75
+// Print numbers from 1 to 40 that are divisible by 4
+// Print numbers from 1 to 100 that are even and greater than 50
+// Print numbers from 1 to 60 that are divisible by 6
+// Print numbers from 1 to 100 that are odd and less than 30
+// Print numbers from 1 to 50 that are multiples of 3 and 5
+// Print numbers from 1 to 100 that are not divisible by 3
+// Print numbers from 1 to 20 that are greater than 15
+// Print numbers from 1 to 100 that end with 0
+// Print numbers from 1 to 50 that are even and divisible by 4
+// Print numbers from 1 to 100 that are odd and divisible by 5
+// Print numbers from 1 to 30 that are greater than 10 but not divisible by 3
+// Print numbers from 1 to 100 that are multiples of 2 or 3
+// Print numbers from 1 to 50 that are less than 25 and odd
+// Print numbers from 1 to 100 that are divisible by 7 or 11
+// Print numbers from 1 to 40 that are not multiples of 5
+// Print numbers from 1 to 100 that are even or greater than 90
