@@ -240,24 +240,40 @@ for (var i = 3; i <= 30; i += 3) {
 // Task 2: Count positive numbers
 // Prompt user for numbers and count how many are positive until they enter 0, then show the count with alert().
 
-var total = 0;
+// var total = 0;
 
-while (true) {
-  var n = parseInt(prompt("Enter a number : "));
-  if (n > 0) {
-    total += n;
-  } else {
-    console.log(`You entered zero or negative`);
-    break;
-  }
-}
+// while (true) {
+//   var n = parseInt(prompt("Enter a number : "));
+//   if (n > 0) {
+//     total += n;
+//   } else {
+//     console.log(`You entered zero or negative`);
+//     break;
+//   }
+// }
 
-console.log(total);
+// console.log(total);
+
 // Task 3: Password retry
 // Set a password (e.g., "pass123"). Let user try entering it via prompt() until correct, then show "Success!" with alert().
 
+var saved_pass = "pass123";
+
+var pass = prompt("enter password : ");
+
+while (pass !== saved_pass) {
+  pass = prompt("enter password : ");
+}
+alert("Guessed correct password");
+
 // Task 4: Double a number until over 100
 // Prompt user for a starting number, double it until it exceeds 100, then show the final number with alert().
+
+var n = parseInt(prompt("Enter a number"));
+while (n <= 100) {
+  n *= 2;
+  console.log(n);
+}
 
 // Task 5: Simple bank balance
 // Start with a balance of 500. Let user subtract amounts via prompt() until balance is 0 or less, showing the new balance each time with alert().
