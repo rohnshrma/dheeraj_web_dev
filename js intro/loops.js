@@ -216,3 +216,63 @@ for (var i = 3; i <= 30; i += 3) {
 // Print numbers from 1 to 100 that are divisible by 7 or 11
 // Print numbers from 1 to 40 that are not multiples of 5
 // Print numbers from 1 to 100 that are even or greater than 90
+
+// == While loop non fixed iteration
+// var yourName = prompt("Enter name :");
+
+// while (yourName.length < 3) {
+//   yourName = prompt("Enter correct name :");
+// }
+
+// console.log(yourName);
+
+// var yourName = prompt("Enter full name :");
+
+// while (yourName.trim().split(" ").length !== 2) {
+//   yourName = prompt("Enter correct full name :");
+// }
+
+// console.log(yourName);
+
+// Task 1: Guess a number between 1 and 10
+// Generate a random number (1-10). Use prompt() to let the user guess until correct, showing "Correct!" with alert() when they guess it.
+
+// Task 2: Count positive numbers
+// Prompt user for numbers and count how many are positive until they enter 0, then show the count with alert().
+
+var total = 0;
+
+while (true) {
+  var n = parseInt(prompt("Enter a number : "));
+  if (n > 0) {
+    total += n;
+  } else {
+    console.log(`You entered zero or negative`);
+    break;
+  }
+}
+
+console.log(total);
+// Task 3: Password retry
+// Set a password (e.g., "pass123"). Let user try entering it via prompt() until correct, then show "Success!" with alert().
+
+// Task 4: Double a number until over 100
+// Prompt user for a starting number, double it until it exceeds 100, then show the final number with alert().
+
+// Task 5: Simple bank balance
+// Start with a balance of 500. Let user subtract amounts via prompt() until balance is 0 or less, showing the new balance each time with alert().
+
+// Task 6: Collect names until empty
+// Use prompt() to collect names in an array until the user enters an empty string, then show all names with alert() or console.log().
+
+// Task 7: Roll a die until 5 or 6
+// Simulate rolling a 6-sided die (using Math.random()) until a 5 or 6 is rolled, then show the number of rolls with alert().
+
+// Task 8: Sum numbers up to a limit
+// Prompt user for a limit, add consecutive integers (1, 2, 3, ...) until the sum exceeds the limit, then show the sum with alert().
+
+// Task 9: Halve a number until below 10
+// Prompt user for a positive number, divide it by 2 until it’s less than 10, then show how many steps it took with alert().
+
+// Task 10: Simple menu with two options
+// Use prompt() to show a menu (1: Show "Hi!", Q: Quit). Keep showing the menu until user enters 'Q', using alert() for responses.
