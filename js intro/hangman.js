@@ -21,7 +21,6 @@ var words = [
 // - Convert the secret word to lowercase for consistency.
 
 var secret = words[Math.floor(Math.random() * words.length)];
-console.log(secret);
 
 // Task 4: Initialize Game Variables
 // - Create a variable to track the number of wrong guesses, initialized to 0.
@@ -32,7 +31,6 @@ var wrongGuesses = 0;
 var maxWrongGuesses = 6;
 var guessedLetters = [];
 var displayWord = "_".repeat(secret.length).split("");
-console.log(displayWord, secret);
 
 // Task 5: Define the Hangman Stages
 // - Create an array of strings representing each stage of the hangman drawing.
@@ -104,8 +102,6 @@ var hangmanStages = [
 `,
 ];
 
-console.log(hangmanStages[6]);
-
 // Task 6: Set Up the Main Game Loop
 // - Write a while loop that runs until the player either wins or loses.
 
@@ -142,3 +138,42 @@ console.log(hangmanStages[6]);
 // Task 13: Test the Game
 // - Run the script and make sure it works as expected.
 // - Test different words, invalid inputs, repeated guesses, winning and losing.
+
+while (wrongGuesses < maxWrongGuesses && displayWord.includes("_")) {
+  console.log(hangmanStages[wrongGuesses]);
+  console.log(`Word : ${displayWord.join(" ")}`);
+  console.log(`Guessed letters : ${guessedLetters.join(", ")}`);
+
+  var guess = prompt("Guess a letter : ").toLowerCase();
+  if (!/^[a-z]$/.test(guess)) {
+    console.log(`Invalid Input! Enter a single alphabet`);
+    continue;
+  }
+
+  if (guessedLetters.includes(guess)) {
+    console.log(`You've already guessed '${guess}'. Try Another`);
+    continue;
+  }
+
+  guessedLetters.push(guess);
+
+  if (secret.includes(guess)) {
+    for (var i = 0; i < secret.length; i++) {
+      if (secret[i] === guess) {
+        displayWord[i] = guess;
+      }
+    }
+    console.log("Good Guess!");
+  } else {
+    wrongGuesses += 1;
+    console.log("Wrong guess");
+  }
+}
+
+if (displayWord.includes("_")) {
+  console.log(hangmanStages[wrongGuesses]);
+  console.log(`Game Over! The word was : ${secret} `);
+} else {
+  console.log(hangmanStages[wrongGuesses]);
+  console.log(`Congratulations You've guessed the correct word : ${secret}`);
+}
