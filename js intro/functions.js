@@ -173,8 +173,38 @@ console.log(addition(num1, num2));
 // The function returns 12 + 56 = 68, which is logged to the console.
 
 // 2. arrow function
-// This is a comment indicating the next topic, arrow functions, but no code is provided for it.
+//  arrow functions are a slick way to write functions in JavaScript.
+// They were added in ES6 (2015) and are shorter than the usual function syntax.
+
 // Arrow functions are a concise syntax for function expressions, introduced in ES6.
 // Syntax: (parameters) => { code to be executed }
 // Example: var add = (a, b) => a + b; // Implicit return for single expressions
-// Arrow functions are often anonymous and can be used similarly to regular function expressions.
+// Basically, arrow functions are often nameless and work like regular functions but with less typing.
+
+// Assign it as a value to a variable
+var sub = (a, b) => {
+  // Here, we're creating a function called 'sub' using arrow function style.
+  // It takes two numbers, 'a' and 'b', and lives inside the 'sub' variable.
+  // The curly braces mean we need a 'return' statement to send back the result.
+  return a - b;
+  // Subtracts 'b' from 'a' and returns the result. So, sub(10, 3) gives 7.
+};
+// Now 'sub' is a function we can call anytime, like a regular function.
+
+// Use it as a callback
+// This comment is pointing out that arrow functions are great as callbacks.
+// It references 'callback.js' (your earlier code), where we saw functions passed into other functions.
+// For example, in 'callback.js', we passed 'calcAge' and an anonymous function to 'lifeSpan'.
+// Arrow functions make callbacks even cleaner, like we saw with lifeSpan's arrow function callback.
+
+// In case all your function does is return something then, { } and return can be omitted
+// This is a cool trick with arrow functions. If your function just returns one thing,
+// you can skip the curly braces and 'return' keyword to make it super short.
+
+// Function returning square of a number
+var calcSq = (n) => n ** 2;
+// Defines a function called 'calcSq' that takes a number 'n'.
+// The => means it's an arrow function, and since it's just one expression (n ** 2),
+// we skip the braces and 'return'. It calculates n squared using ** (exponentiation).
+// Example: calcSq(5) gives 25 because 5 * 5 = 25.
+// The parentheses around 'n' are optional for one parameter, but they keep things clear.

@@ -64,3 +64,48 @@ lifeSpan(90, function () {
 // callback => calcAge
 // This is a comment indicating that calcAge is used as a callback function in the first lifeSpan call.
 // It reinforces the concept that calcAge is passed to lifeSpan to be executed within it.
+// ====== using arrow function
+// Indicates that this code demonstrates the use of an arrow function, a concise ES6 syntax for function expressions.
+
+// Defines the lifeSpan function using arrow function syntax
+var lifeSpan = (averageAge, cb) => {
+  // Declares a function expression named 'lifeSpan' using arrow function syntax.
+  // Parameters:
+  // - averageAge: The expected lifespan (e.g., 90 years).
+  // - cb: A callback function that returns the user's age.
+  // Arrow functions are more concise than traditional function expressions (e.g., function(averageAge, cb) {...}).
+  // They do not have their own 'this' binding and are often used for short, functional operations.
+
+  var yearsLeft = averageAge - cb();
+  // Calls the callback function cb() to get the user's age.
+  // Subtracts the returned age from averageAge to calculate remaining years.
+  // Stores the result in the variable 'yearsLeft'.
+
+  console.log(
+    `Years Left : ${yearsLeft}\nMonths Left : ${yearsLeft * 12}\nWeeks Left : ${
+      yearsLeft * 52
+    }\nDays Left: ${yearsLeft * 365}`
+  );
+  // Logs the remaining lifespan in different units using template literals:
+  // - Years Left: The calculated years left.
+  // - Months Left: Years left multiplied by 12 (approximating months in a year).
+  // - Weeks Left: Years left multiplied by 52 (approximating weeks in a year).
+  // - Days Left: Years left multiplied by 365 (approximating days in a year, ignoring leap years).
+  // The template literal uses ${} to embed expressions for clean string formatting.
+};
+
+// Calling lifeSpan with an anonymous arrow function as the callback
+lifeSpan(
+  90,
+  () =>
+    new Date().getFullYear() - parseInt(prompt("Enter your year of birth : "))
+);
+// Calls the lifeSpan function with:
+// - averageAge set to 90 (assuming a lifespan of 90 years).
+// - An anonymous arrow function as the callback, defined inline.
+// The callback calculates the user's age:
+// - new Date().getFullYear() gets the current year (e.g., 2025).
+// - prompt("Enter your year of birth : ") displays a dialog for user input (returns a string).
+// - parseInt converts the input string to an integer.
+// - Subtracts the birth year from the current year to return the age.
+// The arrow function uses implicit return (no curly braces or 'return' keyword) for conciseness.
