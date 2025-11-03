@@ -150,3 +150,6 @@ console.log(marks);
 // Task 8: Use reduce to compute the average of numbers in an array.
 // Task 9: Use sort to arrange an array of numbers based on their absolute difference from a given target number.
 // Task 10: Use reduce to find the longest string in an array of strings.
+
+var updated = names.map((name) => `!${name}`);
+console.log(updated);
