@@ -1,0 +1,60 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(https://cdn.pixabay.com/photo/2015/04/23/21/59/tree-736875_1280.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main {
+  text-align: center;
+  padding: 2rem;
+  color: #fff;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  width: 50%;
+}
+#main #info {
+  display: none;
+}
+#main h1 {
+  margin-bottom: 1rem;
+}
+
+.show {
+  display: block !important;
+}
+
+#info table {
+  width: 100%;
+  border: 0.5px solid #fff;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+#info table th {
+  text-align: left;
+}
+#info table th,
+td {
+  padding: 0.5rem;
+}
+
+#info table img {
+  filter: drop-shadow(0 0 4px #fff);
+}
+#info table .icon-row th {
+  text-align: center;
+}
