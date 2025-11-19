@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 1rem;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+.level-2 {
+  font-size: 3rem;
+  font-weight: 500;
+  color: steelblue;
+  transition: 0.3s ease-in;
+}
+
+.underline {
+  border: none;
+  border-top: 4px solid steelblue;
+  width: 40%;
+  opacity: 0;
+  margin: 1rem auto;
+}
+
+div:hover .underline {
+  opacity: 1;
+
+  transition: 0.3s ease-in-out;
+}
+
+.wrapper {
+  text-align: center;
+  padding: 4rem 8rem;
+}
+
+#header {
+  color: #fff;
+  height: 90vh;
+  background-color: steelblue;
+  padding: 4rem 8rem 0;
+  overflow: hidden;
+}
+#header #main {
+  margin-top: 4rem;
+}
+#header #main .img-bx img {
+  width: 60%;
+  position: relative;
+  left: 100px;
+  filter: drop-shadow(-4px -4px 4px #000);
+  transform: rotate(25deg);
+}
+#header #main .content-bx h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  text-shadow: -2px 2px 0 tomato;
+}
+#header nav .navbar-brand {
+  font-size: 3rem;
+  font-family: Ubuntu;
+  text-shadow: -1.5px 1.5px 0 tomato;
+}
+#header nav li {
+  margin-left: 1rem;
+}
+#header nav li a {
+  margin-left: 1rem;
+  font-size: 1.4rem;
+}
+
+#features .row .col {
+  border-radius: 10px !important;
+  margin: 1rem;
+}
+#features .row .col i {
+  font-size: 4rem;
+  color: steelblue;
+  margin-bottom: 1rem;
+}
+#features .row .col p {
+  margin: 0;
+}
+
+#pricing .row {
+  margin-top: 2rem;
+}
+#pricing .card-header {
+  font-size: 2rem;
+  font-weight: 400;
+}
+#pricing .card-title {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+#reviews {
+  background-color: steelblue;
+  color: #fff;
+}
+#reviews h3 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  text-shadow: -2px 2px 0 tomato;
+}
+
+#reviews .carousel-item {
+  padding: 4rem 8rem;
+  text-align: center;
+}
+
+#reviews img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 1rem;
+  box-shadow: -2px 2px 4px #000;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 2rem;
+  }
+
+  #header {
+    text-align: center;
+    padding: 2rem;
+    height: auto;
+  }
+  #header #main .img-bx {
+    margin-top: 4rem;
+  }
+  #header #main .img-bx img {
+    transform: rotate(0);
+    position: static;
+  }
+
+  #pricing .row .col-lg-4 {
+    margin-bottom: 2rem;
+  }
+
+  #reviews .carousel-item {
+    padding: 2rem;
+  }
+  #reviews .carousel-control-prev,
+  #reviews .carousel-control-next {
+    display: none;
+  }
+}
+
+/* contact page */
+
+#contact_main {
+  width: 60%;
+  margin: 4rem auto;
+  padding: 2rem;
+  box-shadow: 0 0 5px grey;
+  border-radius: 10px;
+}
